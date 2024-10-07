@@ -2,7 +2,7 @@
 .env
 
 # ignore unnecessary folders
-/venv
+.venv
 __pycache__
 
 # ignore unnecessary files
