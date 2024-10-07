@@ -1,2 +1,6 @@
+# ignore environment files
+.env
+
+# ignore unnecessary files
 __pycache__
 tst.py
