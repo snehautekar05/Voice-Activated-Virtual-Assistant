@@ -1,6 +1,9 @@
 # ignore environment files
 .env
 
-# ignore unnecessary files
+# ignore unnecessary folders
+/venv
 __pycache__
+
+# ignore unnecessary files
 tst.py
