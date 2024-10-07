@@ -11,10 +11,10 @@ def listen():
     try:
         with sr.Microphone() as source:
             r.adjust_for_ambient_noise(source, duration=1)
-            print("Listening...")
+            print("    Listening...")
             audio = r.listen(source, timeout=5, phrase_time_limit=10)
 
-        print("Recognizing...")
+        print("    Recognizing...")
         command = r.recognize_google(audio) # Use the speech recognizer to convert speech to text
         # print(f"You said -> {command}")
     except Exception as e:
