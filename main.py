@@ -4,8 +4,8 @@ from func.speak import speak
 
 # Starting point of the program
 if(__name__=="__main__"):
-    print("Initializing Alexa...")
-    speak("Alexa Initialized")
+    speak("Initializing Alexa...")
+    print("Alexa Initialized")
     speak("How can I help you today!")
 
     # Main Loop
@@ -15,11 +15,11 @@ if(__name__=="__main__"):
             print("Have a nice day!")
             speak("Thankyou, I am always ready to help you. Have a nice day!")
             break
-        elif("hello alexa"==word.lower() or "hey alexa"==word.lower() or "alexa"==word.lower()):
-            print("Activated...")
-            speak("I am listening.")
+        # elif("hello alexa"==word.lower() or "hey alexa"==word.lower() or "alexa"==word.lower()):
+        #     print("Activated...")
+        #     speak("I am listening.")
 
-            command = listen()
-            # processCmd(command)
+        command = listen()
+        # processCmd(command)
 
 input("Press Enter to STOP!")
